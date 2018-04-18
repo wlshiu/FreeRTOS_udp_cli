@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FreeRTOS_udp_cli" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/FreeRTOS_udp_cli" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="FreeRTOS/include" />
+					<Add directory="Trace/Include" />
+					<Add directory="Trace/config" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../../_portable/codeblocks-17.12mingw/MinGW/lib/libkernel32.a" />
+					<Add library="../../../../_portable/codeblocks-17.12mingw/MinGW/lib/libws2_32.a" />
+					<Add library="../../../../_portable/codeblocks-17.12mingw/MinGW/lib/libwinmm.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/FreeRTOS_udp_cli" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="CLI-commands.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/cli/FreeRTOS_CLI.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/croutine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/event_groups.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/include/FreeRTOS.h" />
+		<Unit filename="FreeRTOS/include/FreeRTOSConfig.h" />
+		<Unit filename="FreeRTOS/include/FreeRTOS_CLI.h" />
+		<Unit filename="FreeRTOS/include/StackMacros.h" />
+		<Unit filename="FreeRTOS/include/croutine.h" />
+		<Unit filename="FreeRTOS/include/deprecated_definitions.h" />
+		<Unit filename="FreeRTOS/include/event_groups.h" />
+		<Unit filename="FreeRTOS/include/list.h" />
+		<Unit filename="FreeRTOS/include/message_buffer.h" />
+		<Unit filename="FreeRTOS/include/mpu_prototypes.h" />
+		<Unit filename="FreeRTOS/include/mpu_wrappers.h" />
+		<Unit filename="FreeRTOS/include/portable.h" />
+		<Unit filename="FreeRTOS/include/portmacro.h" />
+		<Unit filename="FreeRTOS/include/projdefs.h" />
+		<Unit filename="FreeRTOS/include/queue.h" />
+		<Unit filename="FreeRTOS/include/semphr.h" />
+		<Unit filename="FreeRTOS/include/stack_macros.h" />
+		<Unit filename="FreeRTOS/include/stream_buffer.h" />
+		<Unit filename="FreeRTOS/include/task.h" />
+		<Unit filename="FreeRTOS/include/timers.h" />
+		<Unit filename="FreeRTOS/list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/portable/MemMang/heap_5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/stream_buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/tasks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS/timers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Run-time-stats-utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Trace/Include/trcKernelPort.h" />
+		<Unit filename="Trace/Include/trcPortDefines.h" />
+		<Unit filename="Trace/Include/trcRecorder.h" />
+		<Unit filename="Trace/trcKernelPort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Trace/trcSnapshotRecorder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="UDPCommandServer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
